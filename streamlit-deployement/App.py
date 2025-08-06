@@ -33,7 +33,7 @@ data = pd.DataFrame({
 
 map_bool(data)
 
-model = joblib.load("../model/introvert_classifier_model.pkl")
+model = joblib.load("Introvert-Classification/model/introvert_classifier_model.pkl")
 
 if st.button("Predict"):
     pred = model.predict(data)
