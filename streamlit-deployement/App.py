@@ -35,6 +35,6 @@ map_bool(data)
 
 model = joblib.load("model/introvert_classifier_model.pkl")
 
-pred = model.predict(data)
-
-st.write(f"You are an {"Introvert" if pred else "Extrovert"}")
+if st.button("Predict"):
+    pred = model.predict(data)
+    st.write(f"You are an {"Introvert" if pred == 1 else "Extrovert"}")
