@@ -5,18 +5,8 @@ st.title("Are you the life of the party or the one ghosting it? Find out here.")
 
 st.caption("We made a model that tries to guess if you're an introvert or extrovert — just answer some questions and let the algorithm judge you.")
 
-"""
-Required:
->Time_spent_Alone
->Stage_fear
->Social_event_attendance
->Going_outside
->Drained_after_socializing
->Friends_circle_size
->Post_frequency
-"""
 
-time_spent_alone = st.slider("How much time are you by yourself daily?")
+time_spent_alone = st.slider("How much time are you by yourself daily?", 0 , 24)
 stage_fear = st.radio("Do you believe yourself to have stage fear?",['Yes','No'])
 social_event_attendance = st.number_input("How many social events do you attend in a day?", 0, 50)
 going_outside = st.number_input("How often do you go outside in a day?", 0, 1000)
