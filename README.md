@@ -31,3 +31,20 @@ git clone https://github.com/Abhishek-S0111/Introvert-Classification.git
 cd Introvert-Classification
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+## 📂 Project Structure
+
+```
+📦Introvert-Classification
+├── code/i-wonder-what-i-am.ipynb                # Kaggle notebook containing ML pipeline
+├── app.py                                       # Streamlit app(local)
+├── model/introvert_classifier_model.pkl         # Trained classification model
+├── data/train.csv                               # Training Data
+  ─ data/test.csv                                # Testing Data(Validation Set)
+├── requirements.txt                             # Required packages
+├── streamlit-deployement/App.py                 # Streamlit app (global)
+  ─ streamlit-deployement/requirements.txt  
+└── README.md                                    # Whatever you're looking at
+
+```
